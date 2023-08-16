@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Mini Project</title>
+</head>
+
+<body>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik :)</p>
+        <p>Sebuah web apps yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <div class="box_triangle">
+            <a href="#triangle">Segitiga</a> <br />
+        </div>
+       
+    </nav>
+    <!-- Bagian Header -->
+    <header class="angle">
+        <div class="triangle" id="triangle">
+            <h2 class="title">Luas Segitiga</h2>
+            <div class="picture">
+                <img src="Assets/luas_segitiga.png" alt="Luas Segitiga">
+            </div>
+            <div class="cyrcle">
+                <p>Rumus Luas Segitiga yaitu: </p>
+                <p class="formula">L = 1/2 x a x t</p>
+                <p>Di mana : <br />
+                    L = Luas <br />
+                    a = Panjang Alas <br />
+                    t = Tinggi
+                </p> <br />
+            </div>
+            <hr />
+            <h2 class="title2">Hitung Luas Segitiga</h2>
+            <form class="form">
+                <label for="alas" class="label">Alas:</label>
+                <input type="number" id="alas" name="alas" class="input"><br><br>
+
+                <label for="tinggi" class="label">Tinggi:</label>
+                <input type="number" id="tinggi" name="tinggi" class="input"><br><br>
+
+                <input class="button" type="button" value="Hitung" onclick="hitungLuasSegitiga()"><br><br>
+
+                <div id="output"></div>
+
+                <input type="button" value="Reset" class="reset" onclick="resetForm()">
+            </form>
+        </div>
+        <div class="triangle">
+            <h2 class="title">Keliling Segitiga</h2>
+            <div class="picture">
+                <img src="Assets/luas_segitiga.png" alt="Luas Segitiga">
+            </div>
+            <div class="cyrcle">
+                <p>Rumus Keliling Segitiga yaitu: </p>
+                <p class="formula">K = S1 + S2 + S3</p>
+                <p>Di mana : <br />
+                    K = Keliling <br />
+                    S1 = Sisi A <br />
+                    S2 = Sisi B <br />
+                    S3 = Sisi C
+                </p> <br />
+            </div>
+            <hr />
+            <h2 class="title2">Hitung Keliling Segitiga</h2>
+            <form class="form" id="kalkulator">
+                <label for="sisia">Sisi A:</label>
+                <input type="number" id="sisia" name="sisia" class="input">
+
+                <label for="sisib">Sisi B:</label>
+                <input type="number" id="sisib" name="sisib" class="input">
+
+                <label for="sisic">Sisi C:</label>
+                <input type="number" id="sisic" name="sisic" class="input">
+
+                <input class="button2" type="button" value="Hitung" onclick="hitungKeliling()">
+
+                <p>Hasil: <span id="results"></span></p>
+
+                <input type="button" value="Reset" class="reset" onclick="reset()">
+            </form>
+        </div>
+       
+    </header>
+
+    <footer>
+        <p> &copy | Damar Galih Aji Pradana.</p>
+    </footer>
+
+    <script src="Js/index.js"></script>
+</body>
+
+</html>
