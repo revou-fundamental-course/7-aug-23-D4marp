@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+}
+.navbar h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.angle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.box_triangle {
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+  background-color: cornflowerblue;
+}
+.box_triangle a {
+  color: white;
+}
+.box_parallelogram {
+  width: 100%;
+  padding: 8px;
+}
+.triangle {
+  margin: 15px;
+  border: 2px solid blue;
+  box-shadow: 2px;
+}
+.triangle .title {
+  padding: 50px;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+.triangle .title2 {
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.pict {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cyrcle {
+  padding: 10px;
+}
+.formula {
+  text-align: center;
+}
+.form {
+  position: relative;
+  margin-inline: 1.5rem;
+  row-gap: 1.25rem;
+  padding: 2rem;
+}
+.label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.input {
+  width: 100%;
+  padding: 8px 6px;
+  border-radius: 6px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+.input:focus {
+  border: 2px solid blue;
+}
+.button {
+  display: flex;
+  margin: auto;
+  padding: 14px 2rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  cursor: pointer;
+}
+.button2 {
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  padding: 14px 2rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  cursor: pointer;
+}
+.reset {
+  display: flex;
+  padding: 10px 1rem;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.reset:hover {
+  border-radius: 4px solid black;
+  color: white;
+  background-color: darkorange;
+}
+footer {
+  padding: 12px;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+footer p {
+  font-size: 15px;
+}
